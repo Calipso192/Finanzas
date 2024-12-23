@@ -35,6 +35,14 @@ function guardarMonto(tipo) {
     }
 }
 
+function borrarDatos() {
+    localStorage.removeItem('montosGastos');
+    localStorage.removeItem('montosIngresos');
+    montosGastos = {};
+    montosIngresos = {};
+    actualizarGraficaCombinada();
+}
+
 function actualizarGraficaCombinada() {
     if (graficaCombinada) {
         graficaCombinada.destroy();
