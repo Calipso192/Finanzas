@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Gastos e Ingresos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Gastos e Ingresos</h1>
+        <div class="input-group">
+            <input type="number" id="montoGasto" placeholder="Ingrese el monto del gasto">
+            <button onclick="guardarMonto('gasto')">Guardar Gasto</button>
+        </div>
+        <div class="input-group">
+            <input type="number" id="montoIngreso" placeholder="Ingrese el monto del ingreso">
+            <button onclick="guardarMonto('ingreso')">Guardar Ingreso</button>
+        </div>
+        <canvas id="graficaCombinada"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    <script src="service-worker.js"></script>
+</body>
+</html>
