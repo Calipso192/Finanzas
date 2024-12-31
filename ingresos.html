@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Ingresos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="gastos.html">Gastos</a></li>
+            <li><a href="ingresos.html">Ingresos</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1 id="titulo">Registro de Ingresos</h1>
+        <div class="input-group">
+            <input type="date" id="fechaIngreso" placeholder="Seleccione la fecha">
+            <input type="number" id="montoIngreso" placeholder="Ingrese el monto del ingreso">
+            <button onclick="guardarMonto('ingreso')">Guardar Ingreso</button>
+        </div>
+        <button onclick="borrarUltimoDato('ingreso')">Borrar Último Ingreso</button>
+        <canvas id="graficaIngresos"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    <script src="service-worker.js"></script>
+</body>
+</html>
